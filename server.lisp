@@ -69,9 +69,9 @@
         (:div :class "d-flex justify-content-center mb-4"
          (:div :class "btn-group w-100" :role "group"
           (:input :type "radio" :name "gender" :value "male" :id "m" :class "btn-check" :checked t)
-          (:label :for "m" :class "btn btn-outline-primary py-2" "ԱՅՐ (Male)")
+          (:label :for "m" :class "btn btn-outline-primary py-2" "Արական (Male)")
           (:input :type "radio" :name "gender" :value "female" :id "f" :class "btn-check")
-          (:label :for "f" :class "btn btn-outline-danger py-2" "ԿԻՆ (Female)")))
+          (:label :for "f" :class "btn btn-outline-danger py-2" "Իգական (Female)")))
         
         (:div
          (:button :class "btn btn-dark w-100 mb-2"
