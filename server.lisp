@@ -32,7 +32,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 5vh 20px; /* Space at top and sides */
+          padding: 5vh 20px; 
         }
 
         .ui-monster-card {
