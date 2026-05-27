@@ -27,3 +27,4 @@ instance/
 
 quicklisp.lisp
 quicklisp/
+history.txt
