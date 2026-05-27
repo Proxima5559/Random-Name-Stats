@@ -100,7 +100,80 @@
                      :famous-people ("Ալեքսանդր Մակեդոնացի" "Ալեքսանդր Թամանյան" "Ալեքսանդր Սպենդիարյան")
                      :related-names ("Ալեքսան" "Ալեքս")
                      :tags ("պաշտպան" "զորավար" "ճարտարապետ")
-                     :desc "Հունական անուն, որը նշանակում է «մարդկանց պաշտպան»։")))
+                     :desc "Հունական անուն, որը նշանակում է «մարդկանց պաշտպան»։")
+                (:id 9
+                    :gender "female"
+                    :arm "Ազատուհի"
+                    :lat "Azatuhi"
+                    :origin "Հայկական"
+                    :status "Ավանդական"
+                    :era "medieval/modern"
+                    :diminutives ("Ազատ" "Ազո")
+                    :famous-people nil
+                    :related-names ("Ազատ")
+                    :tags ("ազատություն" "անկախություն")
+                    :desc "Ազատ անվան իգական տարբերակը, նշանակում է «ազատ կին»։")
+                (:id 10
+                    :gender "female"
+                    :arm "Աիդա"
+                    :lat "Aida"
+                    :origin "Արաբական/Իտալական"
+                    :status "Ժամանակակից"
+                    :era "modern"
+                    :diminutives ("Աիդկա" "Իդա")
+                    :famous-people ("Աիդա Պապիկյան" "Աիդա Սարգսյան")
+                    :related-names ("Իդա")
+                    :tags ("օպերա" "արքայադուստր")
+                    :desc "Հանրաճանաչ է դարձել Վերդիի համանուն օպերայից հետո։ Նշանակում է «հյուր» կամ «վերադարձող»։")
+                (:id 11
+                    :gender "female"
+                    :arm "Ալեքսանդրա"
+                    :lat "Alexandra"
+                    :origin "Հունական"
+                    :status "Միջազգային"
+                    :era "ancient"
+                    :diminutives ("Ալյա" "Սաշա" "Սանդրա")
+                    :famous-people ("Ալեքսանդրա Գրիգորյան")
+                    :related-names ("Ալեքսանդր" "Ալեքս")
+                    :tags ("պաշտպան" "թագավորական")
+                    :desc "Ալեքսանդր անվան իգական ձևը, որը նշանակում է «մարդկանց պաշտպան»։")
+                (:id 12
+                    :gender "female"
+                    :arm "Ալինա"
+                    :lat "Alina"
+                    :origin "Գերմանական/Սլավոնական"
+                    :status "Ժամանակակից"
+                    :era "modern"
+                    :diminutives ("Ալյա" "Ալինկա")
+                    :famous-people ("Ալինա Օրլովա" "Ալինա Մարտիրոսյան-Արայան" "Ալինա Փաշ")
+                    :related-names ("Ադելինա" "Ալիսա")
+                    :tags ("ազնվական" "լուսավոր")
+                    :desc "Ծագում է գերմանական «ազնվական» կամ սլավոնական «գեղեցիկ/լուսավոր» բառերից։")
+                (:id 13
+                    :gender "female"
+                    :arm "Ալվարդ"
+                    :lat "Alvard"
+                    :origin "Հայկական"
+                    :status "Ավանդական"
+                    :era "medieval"
+                    :diminutives ("Ալո" "Վարդ")
+                    :famous-people ("Ալվարդ Պետրոսյան")
+                    :related-names ("Վարդուհի" "Ալվինա")
+                    :tags ("ծաղիկ" "կարմիր" "գեղեցկություն")
+                    :desc "Կազմված է «ալ» (վառ կարմիր) և «վարդ» բառերից՝ նշանակելով «կարմիր վարդ»։")
+
+                (:id 14
+                    :gender "female"
+                    :arm "Աղավնի"
+                    :lat "Aghavni"
+                    :origin "Հայկական"
+                    :status "Ավանդական"
+                    :era "ancient/medieval"
+                    :diminutives ("Աղուն" "Աղավնիկ")
+                    :famous-people ("Աղավնի Մեսրոպյան")
+                    :related-names ("Աստղիկ")
+                    :tags ("թռչուն" "խաղաղություն" "մաքրություն")
+                    :desc "Հայկական անուն, որը բառացի նշանակում է «աղավնի թռչուն»՝ խորհրդանշելով խաղաղություն և մաքրություն։")))
 
 (defun pick-random-by-gender (gender)
   (let ((filtered (remove-if-not (lambda (x) (string= (getf x :gender) gender)) *names*)))
