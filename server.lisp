@@ -45,7 +45,9 @@
           max-width: 450px;
           transition: transform 0.3s ease;
         }
-
+        .name-display {
+          animation: slideUp 0.4s ease-out;
+        }
         .history-vault {
           width: 100%;
           max-width: 450px;
