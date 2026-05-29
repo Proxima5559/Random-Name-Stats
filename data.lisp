@@ -432,3 +432,24 @@
     (if filtered
         (nth (random (length filtered)) filtered)
         nil)))
+
+(defun filter-names (&key era status gender (offset 0) (limit 9)) 
+  "Returns a sliced list of names matching the criteria."
+  (let ((filtered (remove-if-not
+                   (lambda (name)
+                     (let ((n-era (getf name :era))
+                           (n-status (getf name :status))
+                           (n-gender (getf name :gender)))
+                       (and (or (not era) (string-equal era "all") 
+                                (search (string-downcase era) (string-downcase (or n-era ""))))
+                            (or (not status) (string-equal status "all") 
+                                (string-equal n-status status))
+                            (or (not gender) (string-equal gender "all") 
+                                (string-equal n-gender gender)))))
+                   *names*)))
+    (let* ((start (or offset 0))
+           (end (min (length filtered) (+ start (or limit 9)))))
+      (if (>= start (length filtered))
+          nil
+          (subseq filtered start end)))))
+(export 'filter-names)

@@ -179,7 +179,13 @@
                             (dolist (person (getf entry :famous-people))
                               (htm (:li "• " (str person)))))))))
 
-           
+           (:div :class "mt-4 pt-3 border-top border-secondary"
+                   (:a :href "/museum" 
+                       :class "btn btn-sm btn-outline-info w-100 d-flex align-items-center justify-content-center"
+                       :style "border-style: dashed; border-width: 2px;"
+                       (:span :class "me-2" "Շատ անուններ տեսնել") 
+                       " →"))
+
             (:ul :id "history-list" :hx-swap-oob "innerHTML"
                  (dolist (h armenian-names.persistence:*name-history*)
                    (htm (:li :class "p-2 mb-2 rounded history-item" (str h)))))))

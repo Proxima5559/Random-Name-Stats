@@ -4,4 +4,5 @@
   :depends-on (:hunchentoot :cl-who) 
   :components ((:file "data") 
                (:file "persistence")      
-               (:file "server")))    
+               (:file "server")
+               (:file "museum" :pathname "src/museum")))    
