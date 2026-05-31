@@ -183,7 +183,7 @@
                    (:a :href "/museum" 
                        :class "btn btn-sm btn-outline-info w-100 d-flex align-items-center justify-content-center"
                        :style "border-style: dashed; border-width: 2px;"
-                       (:span :class "me-2" "Շատ անուններ տեսնել") 
+                       (:span :class "me-2" "Տեսնել անունների ցանկը") 
                        " →"))
 
             (:ul :id "history-list" :hx-swap-oob "innerHTML"

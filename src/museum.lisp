@@ -68,12 +68,18 @@
       (:style "
         body { background: #1b263b; color: #e0e1dd; font-family: 'Segoe UI', Tahoma, sans-serif; }
         .name-card { 
-            background: rgba(255, 255, 255, 0.03); 
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: #0d1b2a; 
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 12px;
-            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
         }
-        .name-card:hover { transform: translateY(-4px); border-color: #4361ee; }
+
+        .name-card:hover { 
+            transform: translateY(-6px); 
+            border-color: #4361ee; 
+            box-shadow: 0 10px 25px rgba(67, 97, 238, 0.15);
+        }
         .filter-section { background: rgba(0, 0, 0, 0.15); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
         .badge-era { font-size: 0.65rem; letter-spacing: 0.5px; }
         .form-select, .form-select:focus { background-color: #0d1b2a; color: #e0e1dd; border-color: rgba(255,255,255,0.2); }
@@ -84,7 +90,7 @@
       (:div :class "d-flex justify-content-between align-items-center mb-5"
        (:div
         (:h1 :class "fw-bold mb-1" "Անունների Թանգարան")
-        (:p :class "text-muted mb-0" "Explore the complete collection of Armenian names"))
+        (:p :class "text-muted mb-0" "Ծանոթացեք հայկական անունների ամբողջական ցանկին:"))
        (:a :href "/" :class "btn btn-outline-light px-4" "← Գլխավոր էջ"))
 
       (:div :class "filter-section mb-5"
