@@ -425,7 +425,97 @@
                      :famous-people ("Ավետիք Իսահակյան" "Ավետիք Չալաբյան")
                      :related-names ("Ավետիս")
                      :tags ("բարի լուր" "ավետիս")
-                     :desc "Ծագում է հայերեն «ավետիս» բառից, որը նշանակում է «բարի լուր», «ուրախալի լուր»։")))
+                     :desc "Ծագում է հայերեն «ավետիս» բառից, որը նշանակում է «բարի լուր», «ուրախալի լուր»։")
+                (:id 35
+                     :gender "female"
+                     :arm "Ամալյա"
+                     :lat "Amalya"
+                     :origin "Գերմանական"
+                     :status "Ժամանակակից"
+                     :era "modern"
+                     :diminutives ("Ամալ" "Ամկա")
+                     :famous-people ("Ամալյա Հովհաննիսյան")
+                     :related-names ("Ամալիա")
+                     :tags ("աշխատասեր" "պաշտպան")
+                     :desc "Գերմանական ծագմամբ անուն (Amalia), որը թարգմանաբար նշանակում է «աշխատասեր» կամ «արդյունավետ»։")
+
+                (:id 36
+                     :gender "female"
+                     :arm "Անահիտ"
+                     :lat "Anahit"
+                     :origin "Հայկական"
+                     :status "Դասական"
+                     :era "ancient"
+                     :diminutives ("Անահիտկա" "Անո")
+                     :famous-people ("Անահիտ Տարոնեցի" "Անահիտ Սահինյան")
+                     :related-names ("Անի")
+                     :tags ("դիցաբանական" "մայրություն" "պտղաբերություն")
+                     :desc "Հին հայկական դիցաբանության մեջ պտղաբերության, արգասավորության ու մայրության գլխավոր աստվածուհին (Անահիտ մայր)։")
+
+                (:id 37
+                     :gender "female"
+                     :arm "Անաստասիա"
+                     :lat "Anastasia"
+                     :origin "Հունական"
+                     :status "Միջազգային"
+                     :era "ancient/modern"
+                     :diminutives ("Նաստյա" "Ասյա" "Տասյա")
+                     :famous-people ("Անաստասիա Գրիգորյան")
+                     :related-names ("Անաստաս")
+                     :tags ("հարություն" "վերածնունդ")
+                     :desc "Անաստաս անվան իգական տարբերակը, որը հունարենից թարգմանաբար նշանակում է «հարություն առած» կամ «հարուցյալ»։")
+
+                (:id 38
+                     :gender "female"
+                     :arm "Անի"
+                     :lat "Ani"
+                     :origin "Հայկական"
+                     :status "Դասական"
+                     :era "medieval/modern"
+                     :diminutives ("Անիկ" "Անուշ")
+                     :famous-people ("Անի Լուպե" "Անի Քրիստի")
+                     :related-names ("Անահիտ")
+                     :tags ("մայրաքաղաք" "պատմական" "1001 եկեղեցիներ")
+                     :desc "Ծագում է Բագրատունյաց հռչակավոր մայրաքաղաք Անիի անունից։ Չափազանց սիրված և տարածված անուն է հայերի մեջ։")
+
+                (:id 39
+                     :gender "female"
+                     :arm "Աննա"
+                     :lat "Anna"
+                     :origin "Եբրայական"
+                     :status "Միջազգային"
+                     :era "ancient"
+                     :diminutives ("Անուշ" "Աննկա" "Անյա")
+                     :famous-people ("Աննա Ավստրիացի" "Աննա Մայիլյան" "Աննա Հակոբյան")
+                     :related-names ("Անահիտ")
+                     :tags ("շնորհ" "ողորմություն" "աստվածաշնչյան")
+                     :desc "Եբրայական անուն (Hannah), որը նշանակում է «շնորհալի», «բարեհաճ» կամ «աստծո ողորմություն»։")
+
+                (:id 40
+                     :gender "female"
+                     :arm "Անուշ"
+                     :lat "Anush"
+                     :origin "Հայկական"
+                     :status "Դասական"
+                     :era "ancient/modern"
+                     :diminutives ("Անուշիկ" "Անո")
+                     :famous-people ("Անուշ Ասլիբեկյան" "Անուշ դուստր (Հայկազն)")
+                     :related-names ("Անուշավան")
+                     :tags ("քաղցր" "գրականություն" "Թումանյան")
+                     :desc "Բառացի նշանակում է «քաղցրահամ», «անուշահոտ» կամ «հաճելի»։ Հայտնի է նաև Հովհաննես Թումանյանի համանուն պոեմից։")
+
+                (:id 41
+                     :gender "female"
+                     :arm "Աշխեն"
+                     :lat "Ashkhen"
+                     :origin "Իրանական/Հայկական"
+                     :status "Պատմական"
+                     :era "ancient"
+                     :diminutives ("Աշխո")
+                     :famous-people ("Աշխեն թագուհի")
+                     :related-names ("Աշխենիկ")
+                     :tags ("թագուհի" "քրիստոնեություն" "սուրբ")
+                     :desc "Նշանակում է «մուգ երկնագույն» կամ «կապուտաչյա»։ Տրդատ Գ Մեծ թագավորի կինն է՝ Աշխեն թագուհին, ով աջակցել է քրիստոնեության ընդունմանը։")))
 
 (defun pick-random-by-gender (gender)
   (let ((filtered (remove-if-not (lambda (x) (string= (getf x :gender) gender)) *names*)))
@@ -434,7 +524,6 @@
         nil)))
 
 (defun filter-names (&key era status gender (offset 0) (limit 9)) 
-  "Returns a sliced list of names matching the criteria."
   (let ((filtered (remove-if-not
                    (lambda (name)
                      (let ((n-era (getf name :era))
